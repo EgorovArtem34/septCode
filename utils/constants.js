@@ -7,6 +7,13 @@ import avatar6 from "../src/assets/images/6.png";
 import avatar7 from "../src/assets/images/7.png";
 import avatar8 from "../src/assets/images/8.png";
 import avatar9 from "../src/assets/images/9.png";
+import notesImg from "../src/assets/images/notes.png";
+import blueCamera from "../src/assets/icons/consultation/blueCamera.svg";
+import whiteCamera from "../src/assets/icons/consultation/whiteCamera.svg";
+import personalVisit from "../src/assets/icons/consultation/personalVisit.svg";
+import videoImage1 from "../src/assets/images/video/1.png";
+import videoImage2 from "../src/assets/images/video/2.png";
+import videoImage3 from "../src/assets/images/video/3.png";
 
 export const users = [
   {
@@ -118,5 +125,80 @@ export const users = [
     hasNewMessage: false,
     hasNotification: false,
     isChecked: false,
+  },
+  {
+    id: 12,
+    name: "Ахмедов Артур",
+    image: avatar6,
+    age: 29,
+    gender: "муж",
+    hasNewMessage: false,
+    hasNotification: false,
+    isChecked: false,
+  },
+];
+
+export const tabs = ["Заметки", "Консультации", "Видео", "Мероприятия"];
+
+export const notes = [
+  {
+    id: 1,
+    text: "Физические упражнения способствуют активизации мышечных сокращений, кровотока в тканях, снимают отечность, повышают энергетические возможности мышц. Улучшенное питание мышечной ткани ускоряет замещение различных посттравматических дефектов в самих мышцах, костной ткани, связках и сухожилиях.",
+    date: "20.12.2019",
+    mediaContent: null,
+  },
+  {
+    id: 2,
+    text: "Улучшенное питание мышечной ткани ускоряет замещение различных посттравматических дефектов в самих мышцах, костной ткани, связках и сухожилиях.",
+    date: "20.12.2019",
+    mediaContent: notesImg,
+  },
+];
+
+export const consultations = [
+  {
+    id: 1,
+    title: "Online консультация",
+    date: "15.01.2019, 12:30-13:00",
+    image: blueCamera,
+    isConfirmed: true,
+  },
+  {
+    id: 2,
+    title: "Online консультация",
+    date: "15.01.2019, 12:30-13:00",
+    image: whiteCamera,
+    isConfirmed: true,
+  },
+  {
+    id: 3,
+    title: "Личный приём",
+    date: "15.01.2019, 12:30-13:00",
+    image: personalVisit,
+    isConfirmed: false,
+  },
+];
+
+export const videos = [
+  {
+    id: 1,
+    title: "Крабик, ходьба в бок в приседе с двумя резинками Кра…",
+    author: "Астахова Е.В.",
+    image: videoImage1,
+    date: null,
+  },
+  {
+    id: 2,
+    title: "Разминка для локтевого сустава",
+    author: "Астахова Е.В.",
+    image: videoImage2,
+    date: '15.01.2019 - 22.01.2019',
+  },
+  {
+    id: 3,
+    title: "Разминка для локтевого суставаРазминка для локтевого..",
+    author: "Астахова Е.В.",
+    image: videoImage3,
+    date: '15.01.2019 - 22.01.2019',
   },
 ];
