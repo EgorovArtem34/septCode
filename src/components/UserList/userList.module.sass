@@ -1,0 +1,31 @@
+.user
+    display: flex
+    align-items: center
+    background: var(--bg-white, #FFF)
+    margin-bottom: 10px
+    padding: 10px 20px 10px 10px
+    cursor: pointer
+    border-radius: 5px
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+    transition: transform 0.3s ease
+
+    &:hover, &:focus
+        transform: scale(1.03)
+
+.user.active
+    background: var(--bg-gray, #F1F2F3)
+    border: 1px solid white
+
+.user.message
+    border-left: 2px solid #4198C5
+
+.avatar
+    margin-right: 10px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+
+.notifications
+    display: flex
+    gap: 5px
+    margin-left: auto

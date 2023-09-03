@@ -1,0 +1,48 @@
+.interface
+    border-radius: 4px
+    background: var(--bg-white, #FFF)
+    box-shadow: 0px 1px 4px 0px rgba(19, 19, 19, 0.10)
+    margin-bottom: 15px
+
+.btns
+    display: flex
+    justify-content: space-between
+    padding: 13px 10px
+
+.btnOptions
+    display: flex
+    gap: 10px
+
+.searchContainer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px
+
+.inputContainer
+    display: flex
+    align-items: center
+    position: relative
+
+.input
+    border-radius: 25px
+    padding: 10px 10px 10px 35px
+    filter: drop-shadow(0px 1px 4px rgba(30, 30, 30, 0.10))
+    border: 1px solid #ccc
+    outline: none
+    color: var(--text-black, #161718)
+    font-feature-settings: 'clig' off, 'liga' off
+    font-family: Roboto
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    &:focus
+        outline: none
+
+.searchImg
+    position: absolute
+    left: 9px
+
+.closeImg 
+    transform: rotate(-45deg)
