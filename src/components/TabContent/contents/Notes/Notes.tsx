@@ -5,7 +5,7 @@ import { DropDown } from "../../../DropDown/DropDown";
 export const Notes = () => {
   return (
     <div className={styles.notes}>
-      {notes.map((note: any) => (
+      {notes.map((note) => (
         <div className={styles.container} key={note.id}>
           <div className={styles.note}>
             <p className={styles.text}>
@@ -20,7 +20,7 @@ export const Notes = () => {
               />
             )}
           </div>
-          <DropDown />
+          <DropDown position="content" />
         </div>
       ))}
     </div>

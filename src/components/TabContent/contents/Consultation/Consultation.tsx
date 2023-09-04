@@ -12,7 +12,7 @@ export const Consultation = () => {
 
   return (
     <div className={styles.consultations}>
-      {consultations.map((consultation: any, i: number) => (
+      {consultations.map((consultation, i: number) => (
         <div className={consultationClass(i)} key={consultation.id}>
           <div className={styles.imageContainer}>
             <img

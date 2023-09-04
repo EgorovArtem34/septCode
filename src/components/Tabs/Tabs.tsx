@@ -19,9 +19,11 @@ export const Tabs = ({ tabs, activeTab, setActiveTab }: TabsType) => {
       {tabs.map((tab) => (
         <Button
           variant="tabs"
+          aria-label={tab}
           isActive={activeTab === tab}
           key={tab}
-          onClick={() => handleActiveTab(tab)}>
+          onClick={() => handleActiveTab(tab)}
+        >
           {tab}
         </Button>
       ))}

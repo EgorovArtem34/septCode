@@ -6,13 +6,13 @@ import notificationImg from "../../assets/icons/attention.svg";
 import newMessageImg from "../../assets/icons/message.svg";
 import { InterfaceUserList } from "../InterfaceUserList/InterfaceUserList";
 import { Checkbox } from "../../ui/index";
+import { IUser } from "../../types/index";
 
 export const UserList = () => {
   const [activeUserId, setActiveUserId] = useState(2);
   const [isShowSelectUsers, setIsShowSelectUsers] = useState(false);
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
-  // ставлю any, т.к в тз была задача сделать только верстку
-  const userClass = (user: any) =>
+  const userClass = (user: IUser) =>
     cn(styles.user, {
       [styles["active"]]: user.id === activeUserId,
       [styles["message"]]: user.hasNewMessage,
@@ -51,7 +51,7 @@ export const UserList = () => {
               />
             )}
             <img src={user.image} alt="аватар" className={styles.avatar} />
-            <span>{user.name}</span>
+            <span className={styles.username}>{user.name}</span>
             {(user.hasNotification || user.hasNewMessage) && (
               <div className={styles.notifications}>
                 {user.hasNotification && (

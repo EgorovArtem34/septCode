@@ -15,7 +15,7 @@ export const HeaderUser = () => {
           <p className={styles.age}>30 лет, муж</p>
         </div>
       </div>
-      <DropDown />
+      <DropDown position={'headerUser'} />
     </div>
   )
 };

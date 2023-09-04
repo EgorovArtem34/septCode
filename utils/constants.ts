@@ -18,8 +18,9 @@ import eventImage from "../src/assets/images/events/event.png";
 import videoImage from "../src/assets/icons/events/camera.svg";
 import calendarImage from "../src/assets/icons/events/calendar.svg";
 import clockImage from "../src/assets/icons/events/clock.svg";
+import { IConsultation, IEvent, INote, IUser, IVideo } from "../src/types";
 
-export const users = [
+export const users: IUser[] = [
   {
     id: 1,
     name: "Кравцова Александра",
@@ -142,9 +143,14 @@ export const users = [
   },
 ];
 
-export const tabs = ["Заметки", "Консультации", "Видео", "Мероприятия"];
+export const tabs: string[] = [
+  "Заметки",
+  "Консультации",
+  "Видео",
+  "Мероприятия",
+];
 
-export const notes = [
+export const notes: INote[] = [
   {
     id: 1,
     text: "Физические упражнения способствуют активизации мышечных сокращений, кровотока в тканях, снимают отечность, повышают энергетические возможности мышц. Улучшенное питание мышечной ткани ускоряет замещение различных посттравматических дефектов в самих мышцах, костной ткани, связках и сухожилиях.",
@@ -159,7 +165,7 @@ export const notes = [
   },
 ];
 
-export const consultations = [
+export const consultations: IConsultation[] = [
   {
     id: 1,
     title: "Online консультация",
@@ -183,7 +189,7 @@ export const consultations = [
   },
 ];
 
-export const videos = [
+export const videos: IVideo[] = [
   {
     id: 1,
     title: "Крабик, ходьба в бок в приседе с двумя резинками Кра…",
@@ -207,14 +213,14 @@ export const videos = [
   },
 ];
 
-export const events = [
+export const events: IEvent[] = [
   {
     id: 1,
     title: "Тяга резинки в шаге со сгибанием локтя под 90 градусов ",
     image: eventImage,
     tags: [
       { name: "Вебинар", image: videoImage, description: "вебинар" },
-      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "9 марта 2021", image: calendarImage, description: "дата" },
       { name: "17:00", image: clockImage, description: "время" },
     ],
   },
@@ -224,7 +230,7 @@ export const events = [
     image: eventImage,
     tags: [
       { name: "Вебинар", image: videoImage, description: "вебинар" },
-      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "9 марта 2021", image: calendarImage, description: "дата" },
       { name: "17:00", image: clockImage, description: "время" },
     ],
   },
@@ -234,7 +240,17 @@ export const events = [
     image: eventImage,
     tags: [
       { name: "Вебинар", image: videoImage, description: "вебинар" },
-      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "9 марта 2021", image: calendarImage, description: "дата" },
+      { name: "17:00", image: clockImage, description: "время" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Тяга резинки в шаге со сгибанием локтя под 90 градусов ",
+    image: eventImage,
+    tags: [
+      { name: "Вебинар", image: videoImage, description: "вебинар" },
+      { name: "9 марта 2021", image: calendarImage, description: "дата" },
       { name: "17:00", image: clockImage, description: "время" },
     ],
   },
