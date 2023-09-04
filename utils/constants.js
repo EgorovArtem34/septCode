@@ -14,6 +14,10 @@ import personalVisit from "../src/assets/icons/consultation/personalVisit.svg";
 import videoImage1 from "../src/assets/images/video/1.png";
 import videoImage2 from "../src/assets/images/video/2.png";
 import videoImage3 from "../src/assets/images/video/3.png";
+import eventImage from "../src/assets/images/events/event.png";
+import videoImage from "../src/assets/icons/events/camera.svg";
+import calendarImage from "../src/assets/icons/events/calendar.svg";
+import clockImage from "../src/assets/icons/events/clock.svg";
 
 export const users = [
   {
@@ -192,13 +196,46 @@ export const videos = [
     title: "Разминка для локтевого сустава",
     author: "Астахова Е.В.",
     image: videoImage2,
-    date: '15.01.2019 - 22.01.2019',
+    date: "15.01.2019 - 22.01.2019",
   },
   {
     id: 3,
     title: "Разминка для локтевого суставаРазминка для локтевого..",
     author: "Астахова Е.В.",
     image: videoImage3,
-    date: '15.01.2019 - 22.01.2019',
+    date: "15.01.2019 - 22.01.2019",
+  },
+];
+
+export const events = [
+  {
+    id: 1,
+    title: "Тяга резинки в шаге со сгибанием локтя под 90 градусов ",
+    image: eventImage,
+    tags: [
+      { name: "Вебинар", image: videoImage, description: "вебинар" },
+      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "17:00", image: clockImage, description: "время" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Тяга резинки в шаге со сгибанием локтя под 90 градусов ",
+    image: eventImage,
+    tags: [
+      { name: "Вебинар", image: videoImage, description: "вебинар" },
+      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "17:00", image: clockImage, description: "время" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Тяга резинки в шаге со сгибанием локтя под 90 градусов ",
+    image: eventImage,
+    tags: [
+      { name: "Вебинар", image: videoImage, description: "вебинар" },
+      { name: "9 марта 2021", image: videoImage, description: "дата" },
+      { name: "17:00", image: clockImage, description: "время" },
+    ],
   },
 ];

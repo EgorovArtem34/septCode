@@ -17,9 +17,9 @@ export const Videos = () => {
           <div className={styles.info}>
             <p className={styles.title}>{video.title}</p>
             <div>
-              <p className={styles.date}>{video.author}</p>
+              <p className={styles.author}>{video.author}</p>
               {video.date && (
-                <span className={styles.date}>Не подверждена</span>
+                <span className={styles.date}>{video.date}</span>
               )}
             </div>
           </div>

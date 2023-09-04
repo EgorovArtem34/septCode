@@ -9,7 +9,6 @@ type TabsType = {
 
 export const Tabs = ({ tabs, activeTab, setActiveTab }: TabsType) => {
   const handleActiveTab = (tab: string) => {
-    console.log(activeTab, tab);
     if (tab !== activeTab) {
       setActiveTab(tab);
     }
